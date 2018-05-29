@@ -29,3 +29,5 @@ target/
 /.settings
 /architecture-check-with-aspectj.iml
 /bin
+
+*.iml
