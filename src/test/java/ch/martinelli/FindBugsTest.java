@@ -17,11 +17,8 @@ public class FindBugsTest {
 
     @Test
     public void findBugs() {
-        // Analyze all sources in src/main/java
         AnalyzerConfig config = AnalyzerConfig.maven().main();
 
-        // Only treat bugs with rank < 17 and with NORMAL_PRIORITY or higher
-        // Ignore the given bug types in the given classes / methods.
         BugCollector collector = new BugCollector().maxRank(17).minPriority(Priorities.NORMAL_PRIORITY)
                 .just(In.everywhere().ignore("UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"))
                 .because("It's checked and OK like this",

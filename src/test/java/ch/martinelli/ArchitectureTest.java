@@ -7,7 +7,7 @@ import org.junit.Test;
 import static guru.nidi.codeassert.junit.CodeAssertMatchers.matchesRulesExactly;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class VerifyPackageByLayerTest {
+public class ArchitectureTest {
 
 
     @Test

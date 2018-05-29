@@ -15,8 +15,6 @@ public class CodeCoverageTest {
     @Ignore
     @Test
     public void coverage() {
-        // Coverage of branches must be at least 70%, lines 80% and methods 90%
-        // This is checked globally and for all packages except for entities.
         JacocoAnalyzer analyzer = new JacocoAnalyzer(new CoverageCollector(BRANCH, LINE, METHOD)
                 .just(For.global().setMinima(70, 80, 90))
                 .just(For.allPackages().setMinima(70, 80, 90))
