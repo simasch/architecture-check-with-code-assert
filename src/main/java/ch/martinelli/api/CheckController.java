@@ -1,4 +1,4 @@
-package ch.martinelli.boundary;
+package ch.martinelli.api;
 
 import org.springframework.web.bind.annotation.RestController;
 

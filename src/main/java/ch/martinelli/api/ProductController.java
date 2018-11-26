@@ -1,7 +1,7 @@
-package ch.martinelli.boundary;
+package ch.martinelli.api;
 
-import ch.martinelli.control.service.ProductService;
 import ch.martinelli.entity.Product;
+import ch.martinelli.service.ProductService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

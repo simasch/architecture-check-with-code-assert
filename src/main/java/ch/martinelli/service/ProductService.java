@@ -1,7 +1,7 @@
-package ch.martinelli.control.service;
+package ch.martinelli.service;
 
-import ch.martinelli.control.repository.ProductRepository;
 import ch.martinelli.entity.Product;
+import ch.martinelli.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

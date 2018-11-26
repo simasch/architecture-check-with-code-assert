@@ -7,27 +7,27 @@ import org.junit.Test;
 import static guru.nidi.codeassert.junit.CodeAssertMatchers.matchesRulesExactly;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ArchitectureTest {
+public class ArchitectureCodeAssertTest {
 
 
     @Test
-    public void verifyPackageByLayer() {
+    public void checkArchitecture() {
 
         AnalyzerConfig analyzerConfig = AnalyzerConfig.maven().main();
 
         // Class name must match package name in upper case
         class ChMartinelli extends DependencyRuler {
 
-            DependencyRule boundary, controlService, controlRepository, entity;
+            DependencyRule api, service, repository, entity;
 
             @Override
             public void defineRules() {
                 base().mayUse(base().allSubOf());
-                boundary.mayUse(controlService);
-                boundary.mayUse(entity);
-                controlService.mayUse(controlRepository);
-                controlService.mayUse(entity);
-                controlRepository.mayUse(entity);
+                api.mayUse(service);
+                api.mayUse(entity);
+                service.mayUse(repository);
+                service.mayUse(entity);
+                repository.mayUse(entity);
             }
         }
 
