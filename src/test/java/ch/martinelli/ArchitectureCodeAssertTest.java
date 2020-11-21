@@ -1,14 +1,17 @@
 package ch.martinelli;
 
 import guru.nidi.codeassert.config.AnalyzerConfig;
-import guru.nidi.codeassert.dependency.*;
-import org.junit.Test;
+import guru.nidi.codeassert.dependency.DependencyAnalyzer;
+import guru.nidi.codeassert.dependency.DependencyResult;
+import guru.nidi.codeassert.dependency.DependencyRule;
+import guru.nidi.codeassert.dependency.DependencyRuler;
+import guru.nidi.codeassert.dependency.DependencyRules;
+import org.junit.jupiter.api.Test;
 
 import static guru.nidi.codeassert.junit.CodeAssertMatchers.matchesRulesExactly;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ArchitectureCodeAssertTest {
-
 
     @Test
     public void checkArchitecture() {

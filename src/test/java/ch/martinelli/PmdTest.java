@@ -9,7 +9,7 @@ import guru.nidi.codeassert.pmd.CpdMatchCollector;
 import guru.nidi.codeassert.pmd.PmdAnalyzer;
 import guru.nidi.codeassert.pmd.PmdViolationCollector;
 import net.sourceforge.pmd.RulePriority;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static guru.nidi.codeassert.junit.CodeAssertMatchers.hasNoCodeDuplications;
 import static guru.nidi.codeassert.junit.CodeAssertMatchers.hasNoPmdViolations;

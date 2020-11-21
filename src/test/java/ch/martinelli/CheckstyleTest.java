@@ -7,7 +7,7 @@ import guru.nidi.codeassert.checkstyle.StyleChecks;
 import guru.nidi.codeassert.checkstyle.StyleEventCollector;
 import guru.nidi.codeassert.config.AnalyzerConfig;
 import guru.nidi.codeassert.config.In;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static guru.nidi.codeassert.junit.CodeAssertMatchers.hasNoCheckstyleIssues;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -8,7 +8,7 @@ import guru.nidi.codeassert.findbugs.BugCollector;
 import guru.nidi.codeassert.findbugs.FindBugsAnalyzer;
 import guru.nidi.codeassert.findbugs.FindBugsResult;
 import guru.nidi.codeassert.pmd.PmdRuleset;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static guru.nidi.codeassert.junit.CodeAssertMatchers.hasNoBugs;
 import static org.hamcrest.MatcherAssert.assertThat;
